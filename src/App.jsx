@@ -82,7 +82,7 @@ function App() {
                         return 'invalid json'
                       }
                     }})} 
-                    placeholder='Headers (as JSON, e.g., {"Authorization": "Bearer xyz"})'/>
+                    placeholder='Headers (as JSON, e.g., {"Authorization": "Bearer xyz"}), note: {"content-type": "image/(image-format)"} must be provided for image responses.'/>
                     {errors.headers && (
                       <p className="text-red-500 text-sm mt-1">
                         {errors.headers.message}
