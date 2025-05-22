@@ -124,7 +124,7 @@ function App() {
             {response && !imageUrl && (<pre className='bg-stone-900 text-sm p-4 overflow-x-auto h-auto'>
               {typeof response.data === 'object' ? JSON.stringify(response.data, null, 2) : response.data}
             </pre>)}
-            {response && imageUrl && <img src={imageUrl}/>}
+            {response && imageUrl && <img src={imageUrl} className='max-w-[500px]'/>}
             {error && <pre className='bg-stone-900 text-sm p-4 overflow-x-auto h-auto'>
               {error.message}
             </pre>}
