@@ -42,7 +42,6 @@ function App() {
           const imgurl = URL.createObjectURL(blob)
           setImageUrl(imgurl)
 
-          if(imgurl) URL.revokeObjectURL(imgurl)
         }
         setResponse(res)
       })
